@@ -7,8 +7,6 @@
 
 [LOG] OutputCoreAudio::enumerate               : Enumerating...
 [LOG] OutputCoreAudio::enumerate               : Found output driver: "Built-in Output".
-[LOG] OutputCoreAudio::enumerate               : Found output driver: "DisplayPort".
-[LOG] OutputCoreAudio::enumerate               : Found output driver: "Display Audio".
 [LOG] OutputCoreAudio::enumerate               : Found output driver: "Soundflower (2ch)".
 [LOG] OutputCoreAudio::enumerate               : Found output driver: "Soundflower (64ch)".
 [LOG] OutputCoreAudio::enumerate               : Done.

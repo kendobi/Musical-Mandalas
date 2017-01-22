@@ -55,23 +55,36 @@ public class BreathingMusic : MonoBehaviour {
 	[FMODUnity.EventRef]
 	public string BreatheOut1 = "event:/BreatheOut_1";
 
-	[FMODUnity.EventRef]
-	public string BreatheIn2 = "event:/BreatheIn_2";
 
 	[FMODUnity.EventRef]
 	public string BreatheOut2 = "event:/BreatheOut_2";
 
-	[FMODUnity.EventRef]
-	public string BreatheIn3 = "event:/BreatheIn_3";
+
 
 	[FMODUnity.EventRef]
 	public string BreatheOut3 = "event:/BreatheOut_3";
 
-	[FMODUnity.EventRef]
-	public string BreatheIn4 = "event:/BreatheIn_4";
 
 	[FMODUnity.EventRef]
 	public string BreatheOut4 = "event:/BreatheOut_4";
+
+	[FMODUnity.EventRef]
+	public string BreatheOut5 = "event:/BreatheOut_5";
+
+	[FMODUnity.EventRef]
+	public string BreatheOut6 = "event:/BreatheOut_6";
+
+	[FMODUnity.EventRef]
+	public string BreatheOut7 = "event:/BreatheOut_7";
+
+	[FMODUnity.EventRef]
+	public string BreatheOut8 = "event:/BreatheOut_8";
+
+	[FMODUnity.EventRef]
+	public string BreatheOut9 = "event:/BreatheOut_7";
+
+	[FMODUnity.EventRef]
+	public string BreatheOut10 = "event:/BreatheOut_8";
 
 	public GameObject prefab;
 
@@ -84,7 +97,7 @@ public class BreathingMusic : MonoBehaviour {
 
 		//start music
 		Track4Event = FMODUnity.RuntimeManager.CreateInstance(track4);
-		//Track4Event.start();
+		Track4Event.start();
 
 		Track1Event = FMODUnity.RuntimeManager.CreateInstance(drums);
 		cb = new FMOD.Studio.EVENT_CALLBACK(StudioEventCallback);
@@ -108,46 +121,60 @@ public class BreathingMusic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
-			PlayIn ();
+			PlayIn (BreatheOutController.numBreaths);
 
 		}
 		if (Input.GetMouseButtonUp (0)) {
-			PlayOut ();
-			numBreaths++;
+			PlayOut (BreatheOutController.numBreaths);
+			//numBreaths++;
 		}
 
 	}
 
-	void PlayIn (){
-		if (numBreaths >= 0 && numBreaths <= 6) {
-			FMODUnity.RuntimeManager.PlayOneShot (BreatheIn1, transform.position);
-			//FMODUnity.RuntimeManager.PlayOneShot (BreatheIn2, transform.position);
-
-		} else if (numBreaths >= 4 && numBreaths <= 5) {
-			//FMODUnity.RuntimeManager.PlayOneShot(BreatheIn3, transform.position);
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheIn1, transform.position);
+	void PlayIn (int numBreaths){
 		
-		}
-		else if (numBreaths >= 6 ) {
-			//FMODUnity.RuntimeManager.PlayOneShot(BreatheIn4, transform.position);
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheIn1, transform.position);
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheIn1, transform.position);
 
-		}
 	}
-	void PlayOut (){
-		if (numBreaths >= 0 && numBreaths <= 1) {
-			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut1, transform.position);
+
+	void PlayOut (int numBreaths){
+		FMODUnity.RuntimeManager.PlayOneShot (BreatheOut1, transform.position);
+		switch (numBreaths) {
+		case 0:
 			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut2, transform.position);
+			break;
+		case 2:
+			
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut3, transform.position);
+			break;
+		case 4:
+			
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut4, transform.position);
+			break;
+		case 6:
 
-		} else if (numBreaths >= 2 && numBreaths <= 3) {
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut3, transform.position);
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut1, transform.position);
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut5, transform.position);
+			break;
+		case 8:
+			
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut6, transform.position);
+			break;
+		case 10:
+			
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut7, transform.position);
+			break;
+		case 12:
 
-		}
-		else if (numBreaths >= 4 ) {
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut4, transform.position);
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut1, transform.position);
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut8, transform.position);
+			break;
+		case 14:
 
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut9, transform.position);
+			break;
+		case 16:
+	
+			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut10, transform.position);
+			break;
 		}
 	}
 		

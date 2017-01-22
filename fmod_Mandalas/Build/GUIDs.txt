@@ -6,10 +6,6 @@
 {32b41a25-41c6-4561-b88d-c31227f55ddb} event:/BreatheOut_2
 {d45d100b-6c2a-4344-8928-fd9741688e5c} event:/BreatheOut_3
 {5ecbcb55-bd78-4070-9822-effc6d33bec1} event:/BreatheOut_4
-{c5f2ab0e-741d-4747-80f2-1829c36e2975} event:/Track1
-{76da7039-1e22-4443-91ba-275f6c1b36ef} event:/Track2
-{d36b68ac-a9e3-4569-9400-6a1d578a5679} event:/Track3
-{f12dd5e0-fafe-4374-a629-67aa804d2c4b} event:/Track4
 {42c9a3f4-2e8d-4dd2-90c2-d161b9040515} event:/Mandala1
 {9b55267a-92cd-4920-bc48-68ff47570067} event:/Mandala2
 {028eee09-9c5e-48cd-b87a-74a2544066c8} event:/Mandala3
@@ -19,6 +15,10 @@
 {8f0c0946-f5d4-4a4b-8661-c7f7dc47ab3d} event:/Mandala7
 {e8068f92-e373-4b6b-be5a-0e675f4cb426} event:/Mandala8
 {c15cceb8-2bcd-4d00-864e-67bb0773c73c} event:/Om
+{c5f2ab0e-741d-4747-80f2-1829c36e2975} event:/Track1
+{76da7039-1e22-4443-91ba-275f6c1b36ef} event:/Track2
+{d36b68ac-a9e3-4569-9400-6a1d578a5679} event:/Track3
+{f12dd5e0-fafe-4374-a629-67aa804d2c4b} event:/Track4
 {dc04f033-f33d-42fa-b2b7-fc1e823361be} event:/WindGrass
 {3113fee2-648e-43ad-a389-5d468c1689bd} bus:/
 {54bc9c23-f4cf-45b8-847e-8d563ff775bb} bus:/Reverb

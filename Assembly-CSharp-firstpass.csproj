@@ -96,6 +96,7 @@
      <Compile Include="Assets\Standard Assets\BEINGS\Meditation\Scripts\FigureController.cs" />
      <Compile Include="Assets\Standard Assets\BEINGS\Meditation\Scripts\MandalaController.cs" />
      <Compile Include="Assets\Standard Assets\BEINGS\Meditation\Scripts\Rotate.cs" />
+     <Compile Include="Assets\Standard Assets\BEINGS\Meditation\Scripts\TargetMandalaController.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
