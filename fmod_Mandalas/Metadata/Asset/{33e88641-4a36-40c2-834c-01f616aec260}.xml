@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="EncodableAsset" id="{33e88641-4a36-40c2-834c-01f616aec260}">
+        <property name="assetPath">
+            <value>Mandalas1/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bbc681ef-1849-4e8b-bcef-939f75ddf9da}</destination>
+        </relationship>
+    </object>
+</objects>

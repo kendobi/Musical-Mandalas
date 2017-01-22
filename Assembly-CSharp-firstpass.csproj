@@ -182,11 +182,11 @@
  <Reference Include="AmplifyColor">
  <HintPath>/Users/kennykong/Musical Mandalas/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
  </Reference>
- <Reference Include="PlayMaker">
- <HintPath>/Users/kennykong/Musical Mandalas/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
- </Reference>
  <Reference Include="CloudSystem.Runtime">
  <HintPath>/Users/kennykong/Musical Mandalas/Assets/Plugins/Cloud System/CloudSystem.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMaker">
+ <HintPath>/Users/kennykong/Musical Mandalas/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
