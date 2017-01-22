@@ -119,32 +119,32 @@ public class BreathingMusic : MonoBehaviour {
 	}
 
 	void PlayIn (){
-		if (numBreaths >= 0 && numBreaths <= 3) {
+		if (numBreaths >= 0 && numBreaths <= 6) {
 			FMODUnity.RuntimeManager.PlayOneShot (BreatheIn1, transform.position);
-			FMODUnity.RuntimeManager.PlayOneShot (BreatheIn2, transform.position);
+			//FMODUnity.RuntimeManager.PlayOneShot (BreatheIn2, transform.position);
 
 		} else if (numBreaths >= 4 && numBreaths <= 5) {
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheIn3, transform.position);
+			//FMODUnity.RuntimeManager.PlayOneShot(BreatheIn3, transform.position);
 			FMODUnity.RuntimeManager.PlayOneShot(BreatheIn1, transform.position);
 		
 		}
 		else if (numBreaths >= 6 ) {
-			FMODUnity.RuntimeManager.PlayOneShot(BreatheIn4, transform.position);
+			//FMODUnity.RuntimeManager.PlayOneShot(BreatheIn4, transform.position);
 			FMODUnity.RuntimeManager.PlayOneShot(BreatheIn1, transform.position);
 
 		}
 	}
 	void PlayOut (){
-		if (numBreaths >= 0 && numBreaths <= 3) {
+		if (numBreaths >= 0 && numBreaths <= 1) {
 			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut1, transform.position);
 			FMODUnity.RuntimeManager.PlayOneShot (BreatheOut2, transform.position);
 
-		} else if (numBreaths >= 4 && numBreaths <= 5) {
+		} else if (numBreaths >= 2 && numBreaths <= 3) {
 			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut3, transform.position);
 			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut1, transform.position);
 
 		}
-		else if (numBreaths >= 6 ) {
+		else if (numBreaths >= 4 ) {
 			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut4, transform.position);
 			FMODUnity.RuntimeManager.PlayOneShot(BreatheOut1, transform.position);
 
