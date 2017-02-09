@@ -25,5 +25,6 @@ public class EnvironmentController : MonoBehaviour {
 		}
 		animator.SetBool ("isPressed", pressed);
 		animator.SetInteger ("numBreaths", BreatheOutController.numBreaths);
+		animator.SetInteger ("numInhales", BreatheOutController.numInhales);
 	}
 }
