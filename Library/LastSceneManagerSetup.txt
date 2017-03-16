@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Standard Assets/SCENES/MusicalMandala_Intro.unity
+- path: Assets/mandalas2.unity
   isLoaded: 1
   isActive: 1

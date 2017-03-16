@@ -129,6 +129,7 @@
      <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\AudioSync.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\ColorController.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\LeveLoader.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\MarkerDemo.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\PlaySound.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\PlayerController.cs" />

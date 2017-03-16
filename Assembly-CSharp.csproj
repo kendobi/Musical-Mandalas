@@ -98,6 +98,7 @@
      <Compile Include="Assets\Elementals\Scripts\OrbitCamera.cs" />
      <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
      <Compile Include="Assets\FX Mega Pack 2\Scripts\SmoothCameraOrbit.cs" />
+     <Compile Include="Assets\Grow.cs" />
      <Compile Include="Assets\Locomotion\PlayMaker Custom Actions\Animator\DoLocomotion.cs" />
      <Compile Include="Assets\Locomotion\Scripts\Locomotion.cs" />
      <Compile Include="Assets\Music.cs" />
@@ -716,6 +717,7 @@
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenShakeScale.cs" />
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenStop.cs" />
      <Compile Include="Assets\PlayMaker\Include\iTweenFSMEvents.cs" />
+     <Compile Include="Assets\RaycastTest.cs" />
      <Compile Include="Assets\ScaleOscillate.cs" />
      <Compile Include="Assets\Scripts\LevelScripts\ControlsTutorial.cs" />
      <Compile Include="Assets\Scripts\LevelScripts\HintManagement.cs" />
