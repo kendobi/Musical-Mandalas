@@ -1,11 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GrowFX.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/ScrollingParticle.shader">
     <Files>
-      <File FileName="Assets/Grow.cs" Line="1" Column="1" />
+      <File FileName="Assets/Grow.cs" Line="22" Column="3" />
       <File FileName="Assets/RaycastTest.cs" Line="1" Column="1" />
       <File FileName="Assets/ActivateVFX.cs" Line="1" Column="1" />
       <File FileName="Assets/GrowFX.cs" Line="20" Column="3" />
+      <File FileName="Assets/NotifyScene.cs" Line="17" Column="29" />
+      <File FileName="Assets/SceneController.cs" Line="43" Column="25" />
+      <File FileName="Assets/Standard Assets/ScrollingParticle.shader" Line="34" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
