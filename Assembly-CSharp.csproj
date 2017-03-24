@@ -103,6 +103,7 @@
      <Compile Include="Assets\Locomotion\PlayMaker Custom Actions\Animator\DoLocomotion.cs" />
      <Compile Include="Assets\Locomotion\Scripts\Locomotion.cs" />
      <Compile Include="Assets\Music.cs" />
+     <Compile Include="Assets\NotifyScene.cs" />
      <Compile Include="Assets\ParticleScaler\ParticleScaler.cs" />
      <Compile Include="Assets\ParticleSortLayer.cs" />
      <Compile Include="Assets\PlayMaker Animator\Actions\AnimatorCrossFade.cs" />
@@ -720,6 +721,7 @@
      <Compile Include="Assets\PlayMaker\Include\iTweenFSMEvents.cs" />
      <Compile Include="Assets\RaycastTest.cs" />
      <Compile Include="Assets\ScaleOscillate.cs" />
+     <Compile Include="Assets\SceneController.cs" />
      <Compile Include="Assets\Scripts\LevelScripts\ControlsTutorial.cs" />
      <Compile Include="Assets\Scripts\LevelScripts\HintManagement.cs" />
      <Compile Include="Assets\Scripts\LevelScripts\ThirdPersonOrbitCam.cs" />
