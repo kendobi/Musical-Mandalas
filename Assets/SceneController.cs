@@ -9,6 +9,11 @@ public class SceneController : MonoBehaviour {
 
 	Animator anim;
 
+	public GameObject go1;
+	public GameObject go2;
+	public GameObject go3;
+	public GameObject go4;
+
 
 	// Use this for initialization
 	void Start () {
@@ -21,20 +26,22 @@ public class SceneController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-	}
-
-	void ActivateBool(int holder){
-		if (holder == 1) {
+		if (a) {
 			anim.SetBool ("a", true);
+			go1.SetActive (true);
 		}
-		if (holder == 2) {
+		if (b) {
 			anim.SetBool ("b", true);
+			go2.SetActive (true);
 		}
-		if (holder == 3) {
+		if (c) {
 			anim.SetBool ("c", true);
+			go3.SetActive (true);
 		}
 
+		if (a && b && c) {
+			go4.SetActive (true);
+		}
 
 	}
 }
