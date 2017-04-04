@@ -222,6 +222,7 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_ArcTan2\SFN_ArcTan2_ZTOW.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Rotator\SFN_Rotator_PIV_SPD_ANG.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\Common\ReadPackedData.shader" />
+     <None Include="Assets\Shaders\ScrollingParticle.shader" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />
      <None Include="Assets\AmplifyColor\Resources\Blend.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Parallax\SFN_Parallax_UV_DEP_REF.shader" />
