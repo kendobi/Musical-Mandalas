@@ -18,4 +18,8 @@ public class GrowFX : MonoBehaviour {
 	void Touched () {
 		myVFX.SetActive(true);
 	}
+
+	void Untouched () {
+		//myVFX.SetActive (false);
+	}
 }

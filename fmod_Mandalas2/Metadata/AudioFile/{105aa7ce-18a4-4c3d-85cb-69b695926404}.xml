@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{105aa7ce-18a4-4c3d-85cb-69b695926404}">
+        <property name="assetPath">
+            <value>SoulDnB-Basss.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>11.08079365079365</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bbc681ef-1849-4e8b-bcef-939f75ddf9da}</destination>
+        </relationship>
+    </object>
+</objects>
