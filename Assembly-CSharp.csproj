@@ -719,7 +719,6 @@
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenShakeScale.cs" />
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenStop.cs" />
      <Compile Include="Assets\PlayMaker\Include\iTweenFSMEvents.cs" />
-     <Compile Include="Assets\RaycastTest.cs" />
      <Compile Include="Assets\ScaleOscillate.cs" />
      <Compile Include="Assets\SceneController.cs" />
      <Compile Include="Assets\Scripts\LevelScripts\ControlsTutorial.cs" />
@@ -731,6 +730,7 @@
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
      <Compile Include="Assets\TextController.cs" />
+     <Compile Include="Assets\TouchController.cs" />
      <Compile Include="Assets\TriggerMusic.cs" />
      <Compile Include="Assets\TriggerVFX.cs" />
      <Compile Include="Assets\UFPS\Base\Scripts\Core\Attributes\vp_FloatFieldAttribute.cs" />
