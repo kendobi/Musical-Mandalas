@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{c6d05b30-cec3-43af-8d88-5309fd2daab2}">
         <relationship name="selectables">
-            <destination>{585ef137-6f54-4944-9a27-c6c656106019}</destination>
+            <destination>{7f49ad02-c984-4739-8fbc-60cb8532b40a}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{7f49ad02-c984-4739-8fbc-60cb8532b40a}</destination>
@@ -23,7 +23,7 @@
             <value>0</value>
         </property>
         <property name="uiLastRulerScaleRatio">
-            <value>0.0021309797327170566</value>
+            <value>0.0017356770213913068</value>
         </property>
     </object>
     <object class="GameParameter" id="{7f49ad02-c984-4739-8fbc-60cb8532b40a}">
@@ -32,9 +32,6 @@
         </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.00053792361484669173</value>
-        </property>
-        <property name="uiLastHorizontalScrollBarValue">
-            <value>640</value>
         </property>
     </object>
     <object class="EventMixerMaster" id="{f3954b94-4aca-4d27-baf2-3c54d3ec9462}">
@@ -48,8 +45,8 @@
     <object class="SingleSound" id="{2a427925-d9bb-4789-a781-97aefc7e0456}"/>
     <object class="SingleSound" id="{0c259b0a-b2a2-421d-8b36-5fbe73b54806}"/>
     <object class="EventMixerGroup" id="{838da49c-cf21-4a06-a8fd-e4d5ef686521}"/>
-    <object class="TempoMarker" id="{9a8517c1-c172-4987-a8b3-bd0d647f2a4f}"/>
     <object class="LoopRegion" id="{add2e1cf-7420-445b-bb9f-a0c94e2f3ca5}"/>
+    <object class="TempoMarker" id="{9a8517c1-c172-4987-a8b3-bd0d647f2a4f}"/>
     <object class="MixerBusEffectChain" id="{193c7d78-5ab6-454d-8b47-ddd5a6ed71ec}"/>
     <object class="MixerBusPanner" id="{7868efd1-2ac1-4deb-acb9-9fefba59caf2}"/>
     <object class="MixerBusFader" id="{ca7b36c2-079d-4a9a-a6f6-893ae3e18bd5}"/>

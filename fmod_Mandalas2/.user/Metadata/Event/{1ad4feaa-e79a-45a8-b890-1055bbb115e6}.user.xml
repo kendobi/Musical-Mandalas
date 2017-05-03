@@ -27,7 +27,7 @@
             <value>0</value>
         </property>
         <property name="uiLastRulerScaleRatio">
-            <value>0.0021309797327170566</value>
+            <value>0.0018422559069121807</value>
         </property>
     </object>
     <object class="GameParameter" id="{a39ff051-ffd6-48a3-981b-9c9dee908bb3}">
@@ -48,8 +48,8 @@
     <object class="AutomationTrack" id="{b694b184-b4a6-4654-afe1-922b0d8bc6a0}"/>
     <object class="SingleSound" id="{94e32d16-5054-4d06-b0df-d217fbd57b60}"/>
     <object class="EventMixerGroup" id="{f36bc78a-974b-448e-9922-5b28abdae104}"/>
-    <object class="TempoMarker" id="{dc92d738-49a7-46b2-88d9-c8af63578cee}"/>
     <object class="LoopRegion" id="{606512f5-2a89-4dc9-b39e-f4a4a6e419a2}"/>
+    <object class="TempoMarker" id="{dc92d738-49a7-46b2-88d9-c8af63578cee}"/>
     <object class="MixerBusEffectChain" id="{163924f7-dff9-440c-9bb3-2cb651d62617}"/>
     <object class="MixerBusPanner" id="{3ebb79c6-d3af-4e9b-911c-d5a4c27a7c98}"/>
     <object class="MixerBusFader" id="{93d80190-5187-4688-965f-4c334bd1e143}"/>

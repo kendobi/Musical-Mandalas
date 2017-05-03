@@ -1,3 +1,4 @@
+{6907943f-61c4-4abf-abfb-c18591116d7c} event:/Bass
 {99b4bd18-454b-45c1-a7a3-3f57918b70e9} event:/BreatheIn_1
 {6e8ee1db-39d4-417a-ac35-33c0a6e2fddb} event:/BreatheIn_2
 {67f0f334-ec1c-4fa0-8cf4-9572d2a564ec} event:/BreatheIn_3
@@ -7,6 +8,7 @@
 {d45d100b-6c2a-4344-8928-fd9741688e5c} event:/BreatheOut_3
 {5ecbcb55-bd78-4070-9822-effc6d33bec1} event:/BreatheOut_4
 {d36b68ac-a9e3-4569-9400-6a1d578a5679} event:/Chords
+{1ad4feaa-e79a-45a8-b890-1055bbb115e6} event:/Drums
 {42c9a3f4-2e8d-4dd2-90c2-d161b9040515} event:/Mandala1
 {9b55267a-92cd-4920-bc48-68ff47570067} event:/Mandala2
 {028eee09-9c5e-48cd-b87a-74a2544066c8} event:/Mandala3
@@ -16,13 +18,11 @@
 {8f0c0946-f5d4-4a4b-8661-c7f7dc47ab3d} event:/Mandala7
 {e8068f92-e373-4b6b-be5a-0e675f4cb426} event:/Mandala8
 {c15cceb8-2bcd-4d00-864e-67bb0773c73c} event:/Om
+{c6d05b30-cec3-43af-8d88-5309fd2daab2} event:/Shaker
 {c5f2ab0e-741d-4747-80f2-1829c36e2975} event:/Track1
 {76da7039-1e22-4443-91ba-275f6c1b36ef} event:/Track2
 {f12dd5e0-fafe-4374-a629-67aa804d2c4b} event:/Track4
 {dc04f033-f33d-42fa-b2b7-fc1e823361be} event:/WindGrass
-{6907943f-61c4-4abf-abfb-c18591116d7c} event:/Bass
-{1ad4feaa-e79a-45a8-b890-1055bbb115e6} event:/Drums
-{c6d05b30-cec3-43af-8d88-5309fd2daab2} event:/Shaker
 {3113fee2-648e-43ad-a389-5d468c1689bd} bus:/
 {54bc9c23-f4cf-45b8-847e-8d563ff775bb} bus:/Reverb
 {91b349de-e41c-4754-8c5e-97767e2636c2} bank:/Master Bank

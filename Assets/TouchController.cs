@@ -15,7 +15,7 @@ public class TouchController : MonoBehaviour {
 
 	void Update() {
 		if(Input.touchCount >= 1){
-			if(Input.GetTouch(0).phase == TouchPhase.Began)
+			if(Input.GetTouch(0).phase == TouchPhase.Began || Input.GetTouch(0).phase != TouchPhase.Ended)
 		//if (Input.GetMouseButtonDown(0))
 			{
 
