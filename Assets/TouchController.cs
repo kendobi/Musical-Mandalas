@@ -20,7 +20,7 @@ public class TouchController : MonoBehaviour {
 			{
 
 
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+				Ray ray = Camera.main.ScreenPointToRay (Input.GetTouch(0).position);
 				RaycastHit hit = new RaycastHit ();
 			
 				if (Physics.Raycast (ray, out hit)) {
