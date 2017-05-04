@@ -4,13 +4,18 @@ using System.Collections;
 public class TouchController : MonoBehaviour {
 
 	public GameObject FingerGlow;
-	private Vector3 newPosition;
+	private Vector3[] newPositions;
 	public GameObject[] FingerGlows; 
 
 	private GameObject go;
 
 	void Start(){
-		newPosition = transform.position;
+		
+		for (int i = 0; i < newPositions.Length; i++) {
+		
+			newPositions[i] = transform.position;
+		}
+
 	}
 
 
@@ -32,9 +37,9 @@ public class TouchController : MonoBehaviour {
 						go.SendMessage ("Touched");
 					}
 
-					newPosition = hit.point;
-					newPosition.z = 0;
-					FingerGlows[i].transform.position = newPosition;
+					newPositions[i] = hit.point;
+					newPositions[i].z = 0;
+					FingerGlows[i].transform.position = newPositions[i];
 				} 
 
 				if (Input.GetTouch (i).phase == TouchPhase.Ended || Input.GetTouch (i).phase == TouchPhase.Canceled) {
