@@ -5,6 +5,7 @@ public class TouchController : MonoBehaviour {
 
 	public GameObject FingerGlow;
 	private Vector3 newPosition;
+	public GameObject[] FingerGlows; 
 
 	private GameObject go;
 
@@ -15,38 +16,36 @@ public class TouchController : MonoBehaviour {
 
 	void Update() {
 		if(Input.touchCount >= 1){
-			if(Input.GetTouch(0).phase == TouchPhase.Began || Input.GetTouch(0).phase != TouchPhase.Ended)
-		//if (Input.GetMouseButtonDown(0))
-			{
+
+			Touch[] myTouches = Input.touches;
+			for (int i = 0; i < Input.touchCount; i++) {
+				if (Input.GetTouch (i).phase != TouchPhase.Canceled || Input.GetTouch (i).phase != TouchPhase.Ended)
+ {		//	if (Input.GetMouseButton(0))
 
 
-				Ray ray = Camera.main.ScreenPointToRay (Input.GetTouch(0).position);
-				RaycastHit hit = new RaycastHit ();
+					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+					RaycastHit hit = new RaycastHit ();
 			
-				if (Physics.Raycast (ray, out hit)) {
-					print (hit.collider.name);
-					go = hit.transform.gameObject;
-					go.SendMessage ("Touched");
+					if (Physics.Raycast (ray, out hit)) {
+						print (hit.collider.name);
+						go = hit.transform.gameObject;
+						go.SendMessage ("Touched");
+					}
+
+					newPosition = hit.point;
+					newPosition.z = 0;
+					FingerGlows[i].transform.position = newPosition;
+				} 
+
+				if (Input.GetTouch (i).phase == TouchPhase.Ended || Input.GetTouch (i).phase == TouchPhase.Canceled) {
+					//if (Input.GetMouseButtonUp(0)){
+					if (go != null) {
+						go.SendMessage ("Untouched");
+						Debug.Log ("Touch Released from : " + go.name);
+					}
+
 				}
-
-				newPosition = hit.point;
-				newPosition.z = 0;
-				FingerGlow.transform.position = newPosition;
-			} 
-
-			if(Input.GetTouch(0).phase == TouchPhase.Ended || Input.GetTouch(0).phase == TouchPhase.Canceled){
-		//if (Input.GetMouseButtonUp(0)){
-			if (go != null) {
-				go.SendMessage ("Untouched");
-				Debug.Log ("Touch Released from : " + go.name);
 			}
-
-			}
-		else {
-
-			//newPosition.y = 100;
-			//FingerGlow.transform.position = newPosition;
-		}
 
 	}
 }

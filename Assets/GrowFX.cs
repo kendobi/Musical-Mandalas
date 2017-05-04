@@ -16,7 +16,13 @@ public class GrowFX : MonoBehaviour {
 	}
 	//trigger on state
 	void Touched () {
-		myVFX.SetActive(true);
+		//myVFX.SetActive(true);
+	}
+
+	void OnTriggerEnter(Collider other){
+
+		myVFX.SetActive (true);
+	
 	}
 
 	void Untouched () {
