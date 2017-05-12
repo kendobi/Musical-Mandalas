@@ -1,16 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TouchController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/ScrollingParticle.shader">
     <Files>
-      <File FileName="Assets/TouchController.cs" Line="18" Column="31" />
-      <File FileName="Assets/GrowFX.cs" Line="1" Column="1" />
-      <File FileName="Assets/Shaders/ScrollingParticle.shader" Line="1" Column="1" />
-      <File FileName="Assets/Music.cs" Line="1" Column="1" />
-      <File FileName="Assets/Grow.cs" Line="1" Column="1" />
-      <File FileName="Assets/ActivateVFX.cs" Line="1" Column="1" />
-      <File FileName="Assets/NotifyScene.cs" Line="1" Column="1" />
-      <File FileName="Assets/SceneController.cs" Line="1" Column="1" />
-      <File FileName="Assets/TriggerMusic.cs" Line="1" Column="1" />
+      <File FileName="Assets/TouchController.cs" Line="42" Column="57" />
+      <File FileName="Assets/GrowFX.cs" Line="19" Column="5" />
+      <File FileName="Assets/Shaders/ScrollingParticle.shader" Line="32" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/mandalas2.unity
+- path: Assets/Standard Assets/SCENES/Mandalas3.unity
   isLoaded: 1
   isActive: 1

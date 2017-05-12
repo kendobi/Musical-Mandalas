@@ -9,14 +9,14 @@ public class MandalaController : MonoBehaviour {
 	public int bpl;
 
 	public GameObject[] MandalaLayers;
-	//public GameObject BreatheOutVFX;
+	public GameObject BreatheOutVFX;
 
-	//ParticleSystem.EmissionModule emissionModule;
+	ParticleSystem.EmissionModule emissionModule;
 
 	// Use this for initialization
 	void Start () {
 		pressed = false;
-		//emissionModule = BreatheOutVFX.GetComponent<ParticleSystem>().emission;
+		emissionModule = BreatheOutVFX.GetComponent<ParticleSystem>().emission;
 	
 	}
 	
@@ -28,7 +28,7 @@ public class MandalaController : MonoBehaviour {
 		if (Input.GetMouseButtonUp (0)) {
 			pressed = false;
 			Activate (BreatheOutController.numBreaths);
-			//BreatheOut ();
+			BreatheOut ();
 
 
 		}
@@ -36,26 +36,19 @@ public class MandalaController : MonoBehaviour {
 
 	void Activate (int breaths){
 		print (breaths);
-		if ((breaths % bpl == 0) && (breaths >= 0)) {
+		if ((breaths % bpl == 0) && (breaths > 0)) {
 			int currentLayer = breaths / bpl;
 
 			for (int i = 0; i < MandalaLayers.Length; i++) {
 				if (i == currentLayer) {
-					
 					MandalaLayers [i].SetActive (true);
-
-					//if (i > 0) {
-					//	print ("turn off?");
-					//	MandalaLayers [i - 1].SetActive (false);
-					//}
-
 				}
 			}
 		}
 
 	}
 
-	/*void BreatheOut(){
+	void BreatheOut(){
 		//scale up
 		StartCoroutine(LerpScale(2.0f, BreatheOutVFX, 0.1f));
 		//StartCoroutine (LerpScale (4.0f, BreatheOutVFX, -0.1f));
@@ -95,5 +88,5 @@ public class MandalaController : MonoBehaviour {
 			emissionModule.rate = new ParticleSystem.MinMaxCurve(0.0f);
 		}
 
-	}*/
+	}
 }

@@ -19,11 +19,25 @@ public class Grow : MonoBehaviour {
 	//trigger on state
 	void Touched () {
 		print ("GROW");
-		anim.SetBool ("isTouched", true);
+		//anim.SetBool ("isTouched", true);
 	}
+
 	//activate vfx
 	void Activate(){
 		myVFX.SetActive(true);
+	}
+
+	void OnTriggerEnter(Collider other){
+		anim.SetBool ("isTouched", true);
+
+		myVFX.SetActive (true);
+
+	}
+
+	void OnTriggerExit(Collider other){
+		myVFX.SetActive (false);
+		anim.SetBool ("isTouched", false);
+	
 	}
 
 	//reset to off state
