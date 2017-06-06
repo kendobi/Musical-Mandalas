@@ -25,6 +25,12 @@ public class GrowFX : MonoBehaviour {
 	
 	}
 
+	void OnTriggerExit(Collider other){
+
+		myVFX.SetActive (false);
+
+	}
+
 	void Untouched () {
 		//myVFX.SetActive (false);
 	}

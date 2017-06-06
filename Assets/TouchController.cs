@@ -23,12 +23,12 @@ public class TouchController : MonoBehaviour {
 		if(Input.touchCount >= 1){
 
 			Touch[] myTouches = Input.touches;
-			for (int i = 0; i < Input.touchCount; i++) {
-				if (Input.GetTouch (i).phase != TouchPhase.Canceled || Input.GetTouch (i).phase != TouchPhase.Ended)
+			//for (int i = 0; i < Input.touchCount; i++) {
+				if (Input.GetTouch (0).phase == TouchPhase.Began || Input.GetTouch (0).phase != TouchPhase.Ended)
  {		//	if (Input.GetMouseButton(0))
 
 
-					Ray ray = Camera.main.ScreenPointToRay (Input.GetTouch(i).position);
+					Ray ray = Camera.main.ScreenPointToRay (Input.GetTouch(0).position);
 					RaycastHit hit = new RaycastHit ();
 			
 					if (Physics.Raycast (ray, out hit)) {
@@ -37,12 +37,12 @@ public class TouchController : MonoBehaviour {
 						go.SendMessage ("Touched");
 					}
 
-					newPositions[i] = hit.point;
-					newPositions[i].z = 0;
-					FingerGlows[i].transform.position = newPositions[i];
+					newPositions[0] = hit.point;
+					newPositions[0].z = 0;
+					FingerGlows[0].transform.position = newPositions[0];
 				} 
 
-				if (Input.GetTouch (i).phase == TouchPhase.Ended || Input.GetTouch (i).phase == TouchPhase.Canceled) {
+				if (Input.GetTouch (0).phase == TouchPhase.Ended || Input.GetTouch (0).phase == TouchPhase.Canceled) {
 					//if (Input.GetMouseButtonUp(0)){
 					if (go != null) {
 						go.SendMessage ("Untouched");
@@ -54,4 +54,4 @@ public class TouchController : MonoBehaviour {
 
 	}
 }
-}
+
