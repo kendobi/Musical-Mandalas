@@ -6,10 +6,17 @@ public class Grow : MonoBehaviour {
 	public GameObject myVFX;
 	Animator anim;
 
+	public float emissionRate;
+
+	ParticleSystem myPS;
+	ParticleSystem.EmissionModule emissionModule;
+
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		myPS = myVFX.GetComponent<ParticleSystem> ();
+		emissionModule = myPS.emission;
 	}
 	
 	// Update is called once per frame
@@ -24,25 +31,25 @@ public class Grow : MonoBehaviour {
 
 	//activate vfx
 	void Activate(){
-		myVFX.SetActive(true);
+		emissionModule.rate = emissionRate;
 	}
 
 	void OnTriggerEnter(Collider other){
 		anim.SetBool ("isTouched", true);
 
-		myVFX.SetActive (true);
+	
 
 	}
 
 	void OnTriggerExit(Collider other){
-		myVFX.SetActive (false);
+		
 		anim.SetBool ("isTouched", false);
 	
 	}
 
 	//reset to off state
 	void Deactivate(){
-		myVFX.SetActive (false);
+		emissionModule.rate = 0f;
 		anim.SetBool ("isTouched", false);
 	}
 }
