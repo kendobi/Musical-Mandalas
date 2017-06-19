@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Grow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/PulsingDecal.shader">
     <Files>
-      <File FileName="Assets/FXemission.cs" Line="9" Column="47" />
+      <File FileName="Assets/Grow.cs" Line="1" Column="1" />
+      <File FileName="Assets/FXemission.cs" Line="1" Column="1" />
       <File FileName="Assets/TouchController.cs" Line="39" Column="29" />
       <File FileName="Assets/GrowFX.cs" Line="1" Column="1" />
       <File FileName="Assets/Shaders/ScrollingParticle.shader" Line="1" Column="1" />
-      <File FileName="Assets/Grow.cs" Line="52" Column="28" NotebookId="1" />
+      <File FileName="Assets/Standard Assets/PulsingDecal.shader" Line="42" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
