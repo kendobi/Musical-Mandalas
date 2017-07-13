@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{d49c886c-1947-47c3-9235-b26e48eb1d61}">
+        <property name="assetPath">
+            <value>SoundEffects/AM1_Bowl_Single_01.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>38.460408163265306</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bbc681ef-1849-4e8b-bcef-939f75ddf9da}</destination>
+        </relationship>
+    </object>
+</objects>

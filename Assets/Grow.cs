@@ -36,7 +36,7 @@ public class Grow : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		anim.SetBool ("isTouched", true);
-
+		anim.SetBool ("hasBeenActivated", true);
 	
 
 	}
