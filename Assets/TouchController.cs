@@ -21,7 +21,7 @@ public class TouchController : MonoBehaviour {
 
 			Touch[] myTouches = Input.touches;
 			//for (int i = 0; i < Input.touchCount; i++) {
-				if (Input.GetTouch (0).phase == TouchPhase.Began || Input.GetTouch (0).phase != TouchPhase.Ended)
+				if (Input.GetTouch (0).phase == TouchPhase.Began || Input.GetTouch (0).phase == TouchPhase.Moved)
  {		//	if (Input.GetMouseButton(0))
 
 
@@ -35,18 +35,18 @@ public class TouchController : MonoBehaviour {
 					}
 
 					newPos = hit.point;
-					newPos.z = 0;
+					//newPos.z = 0;
 					FingerGlows[0].transform.position = newPos;
 				} 
 
-				if (Input.GetTouch (0).phase == TouchPhase.Ended || Input.GetTouch (0).phase == TouchPhase.Canceled) {
+				/*if (Input.GetTouch (0).phase == TouchPhase.Ended || Input.GetTouch (0).phase == TouchPhase.Canceled) {
 					//if (Input.GetMouseButtonUp(0)){
 					if (go != null) {
 						go.SendMessage ("Untouched");
 						Debug.Log ("Touch Released from : " + go.name);
 					}
 
-				}
+				}*/
 			}
 
 	}
