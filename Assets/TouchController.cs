@@ -21,7 +21,7 @@ public class TouchController : MonoBehaviour {
 
 			Touch[] myTouches = Input.touches;
 			//for (int i = 0; i < Input.touchCount; i++) {
-				if (Input.GetTouch (0).phase == TouchPhase.Began || Input.GetTouch (0).phase == TouchPhase.Moved)
+				if (Input.GetTouch (0).phase == TouchPhase.Began)
  {		//	if (Input.GetMouseButton(0))
 
 
