@@ -82,6 +82,7 @@
      <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs" />
      <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs" />
      <Compile Include="Assets\Breaths.cs" />
+     <Compile Include="Assets\ButtonManager.cs" />
      <Compile Include="Assets\Cloud System Demos\Scripts\Camera\CameraButtons.cs" />
      <Compile Include="Assets\Cloud System Demos\Scripts\Camera\CameraFlyer.cs" />
      <Compile Include="Assets\Cloud System Demos\Scripts\Camera\CameraRotator.cs" />
