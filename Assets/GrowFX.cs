@@ -5,14 +5,31 @@ public class GrowFX : MonoBehaviour {
 
 	public GameObject myVFX;
 
+	bool TimerStarted = false;
+	private float timer = 0f;
+	public float TimeToTrigger = 10f;
+
+	public float emissionRate;
+
+	ParticleSystem myPS;
+	ParticleSystem.EmissionModule emissionModule;
 
 	// Use this for initialization
 	void Start () {
+		myPS = myVFX.GetComponent<ParticleSystem> ();
+		emissionModule = myPS.emission;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (TimerStarted) {
+			timer += Time.deltaTime;
+		}
+
+		if (timer >= TimeToTrigger) {
+
+			emissionModule.rate = emissionRate;
+		}
 	}
 	//trigger on state
 	void Touched () {
@@ -21,13 +38,16 @@ public class GrowFX : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 
-		myVFX.SetActive (true);
+		if (!TimerStarted)
+			TimerStarted = true;
+		
 	
 	}
 
 	void OnTriggerExit(Collider other){
 
-		myVFX.SetActive (false);
+		emissionModule.rate = 0f;
+		TimerStarted = false;
 
 	}
 

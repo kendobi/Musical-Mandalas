@@ -103,6 +103,7 @@
      <Compile Include="Assets\Grow.cs" />
      <Compile Include="Assets\GrowDependent.cs" />
      <Compile Include="Assets\GrowFX.cs" />
+     <Compile Include="Assets\GrowMat.cs" />
      <Compile Include="Assets\Locomotion\PlayMaker Custom Actions\Animator\DoLocomotion.cs" />
      <Compile Include="Assets\Locomotion\Scripts\Locomotion.cs" />
      <Compile Include="Assets\Music.cs" />
