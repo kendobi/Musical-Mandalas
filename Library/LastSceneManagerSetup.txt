@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Standard Assets/SCENES/Mandalas7.unity
+- path: Assets/Standard Assets/SCENES/Mandalas9.unity
   isLoaded: 1
   isActive: 1
