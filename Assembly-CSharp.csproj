@@ -736,6 +736,7 @@
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
      <Compile Include="Assets\TextController.cs" />
      <Compile Include="Assets\TouchController.cs" />
+     <Compile Include="Assets\TouchControllerRaycast.cs" />
      <Compile Include="Assets\TriggerMusic.cs" />
      <Compile Include="Assets\TriggerVFX.cs" />
      <Compile Include="Assets\UFPS\Base\Scripts\Core\Attributes\vp_FloatFieldAttribute.cs" />

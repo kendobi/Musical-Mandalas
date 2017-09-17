@@ -4,7 +4,7 @@ using System.Collections;
 public class TouchController : MonoBehaviour {
 
 	public GameObject FingerGlow;
-	public GameObject[] FingerGlows; 
+	public float ZOffset = 40;
 	private Vector3 newPos;
 	private float Energy;
 
@@ -14,7 +14,6 @@ public class TouchController : MonoBehaviour {
 
 		newPos = transform.position;
 		Energy = 0;
-
 	}
 
 
@@ -23,7 +22,7 @@ public class TouchController : MonoBehaviour {
 		if (Input.GetMouseButton (0)) {	
 			//Energy -= Time.deltaTime;
 			//if (Energy >= 0) {
-				Vector3 touchedPos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, 40));
+				Vector3 touchedPos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, ZOffset));
 				transform.position = touchedPos;
 
 			//}
