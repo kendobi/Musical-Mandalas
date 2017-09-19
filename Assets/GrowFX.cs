@@ -48,6 +48,7 @@ public class GrowFX : MonoBehaviour {
 
 		emissionModule.rate = 0f;
 		TimerStarted = false;
+		timer = 0f;
 
 	}
 
