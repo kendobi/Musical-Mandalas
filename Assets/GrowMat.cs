@@ -9,7 +9,7 @@ public class GrowMat : MonoBehaviour {
 	Renderer mat;
 
 	private float min = 0.0f;
-	private float max = 1.0f;
+	public float max = 1.0f;
 	private float myopacity = 0.0f;
 	private float currOpacity = 0.0f;
 	private float t = 0.0f;
