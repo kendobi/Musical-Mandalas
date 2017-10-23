@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Standard Assets/SCENES/MainMenu2.unity
+- path: Assets/Standard Assets/SCENES/Mandalas_SingingBowls.unity
   isLoaded: 1
   isActive: 1
