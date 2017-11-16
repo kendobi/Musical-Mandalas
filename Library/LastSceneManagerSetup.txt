@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Mandalas_Waterfall.unity
+- path: Assets/Standard Assets/SCENES/Mandalas_Tree.unity
   isLoaded: 1
   isActive: 1
